@@ -1,0 +1,16 @@
+{
+  "id": "1981452",
+  "name": "y移动端音乐项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2127586",
+      "name": "B端中搜搜",
+      "font_class": "Bduanzhongsousou",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    }
+  ]
+}

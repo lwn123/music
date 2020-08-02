@@ -1,0 +1,59 @@
+.search{
+    padding-top: 2.48rem;
+    font-size: 20px;
+}
+.search .sch{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    /* text-align: center; */
+}
+.search input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 6rem;
+    height: .3rem;
+    padding: .1rem .5rem;
+    border-radius: .4rem;
+    background: #ebecec;
+    border: 1px solid #ebecec;
+}
+.search label{
+    position: absolute;
+    top:.87rem;
+    left: .8rem;
+    color: #c9c9c9c9;
+    font-size: .28rem;
+}
+.search .icon-Bduanzhongsousou{
+    position: absolute;
+    top: .9rem;
+    z-index: 2;
+    left:.4rem;
+    font-size: .24rem;
+    color: #999;
+}
+.search .hottit{
+    font-size: .24rem;
+    color: #666;
+    line-height: .24rem;
+    margin-bottom: .1rem;
+}
+.search .hotcontent{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .1rem;
+
+}
+.search .hotcontent a{
+    display:block;
+    font: .26rem/1.5 Helvetica,sans-serif,STHeiTi;
+    padding: .05rem .2rem;
+    margin:.1rem;
+    border-radius: .3rem;
+    border:1px solid #ebecec;
+}

@@ -1,0 +1,60 @@
+.index .title{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 1.68rem;
+    background: #D43c33;
+}
+.index .title .tName{
+    line-height: 1.68rem;
+    font-size: .4rem;
+    color: #fff;
+    margin-left: .2rem;
+}
+.index .title .down{
+    position: absolute;
+    top: .5rem;
+    right: .4rem;
+    display: inline-block;
+    width: 2rem;
+    height: .72rem;
+    line-height: .72rem;
+    font-size: .32rem;
+    text-align: center;
+    color: #d43c33;
+    background-color: #fff;
+    border-radius: 37.5%/100%;
+}
+.index .tabBar{
+    position: fixed;
+    top:1.68rem ;
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    height: .76rem;
+    line-height: .76rem;
+    font-size: .3rem;
+    background-color: #fff;
+    border-bottom: 0.02rem solid #ccc;
+    
+}
+.index .tabBar .tabwrap{
+    flex: 1;
+    text-align:center;
+}
+.index .tabBar a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: .76rem;
+    color:#333;
+    text-align:center;
+}
+.index .teorouter{
+   padding-top: 3.48rem;
+    height: 7rem;
+}
+.select{
+    color: #DD001B !important;
+    border-bottom: 0.04rem solid #DD001B ;
+}
