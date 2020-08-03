@@ -8,6 +8,13 @@
     height: 2rem;
     /* text-align: center; */
 }
+.search .sch .del{
+   position: absolute;
+   top:.8rem;
+   right: .4rem;
+   background: #ebecec;
+   border: 1px solid #ebecec;
+}
 .search input{
     position: absolute;
     top: 0;
@@ -56,4 +63,50 @@
     margin:.1rem;
     border-radius: .3rem;
     border:1px solid #ebecec;
+}
+.search .song_ul .newS_li{
+    height: 1.2rem;
+}
+.search .song_ul .newS_li .songl{
+    float: left;
+    width:6.5rem;
+    padding-left: .2rem;
+    
+}
+.search .song_ul .newS_li .songl .sname{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+    font-size: .34rem;
+    margin-bottom: .1rem;
+}
+.search .song_ul .newS_li .songl .sauthor{
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.search .song_ul .newS_li .songl .sauthor i{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 4px;
+}
+.search .song_ul .newS_li .bg{
+    background: url(//s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28…=) no-repeat;
+    background-size: 166px 97px;
+}
+.search .song_ul .newS_li .songr{
+    float: right;
+    line-height: 1rem;
+    padding:  0 .15rem;
+}
+.search .song_ul .newS_li .songr .zt{
+    display: inline-block;
+    width: .44rem;
+    height: .44rem;
+    background-position: -24px 0;
 }
