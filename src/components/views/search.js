@@ -35,7 +35,7 @@ import {searchHot,searchInfo} from '../../util/axios'
         searchInfo({ keywords })
             .then(res => {
                 if (res.code == 200) {
-                    console.log(res.result.songs, '搜索结果')
+                    // console.log(res.result.songs, '搜索结果')
                     this.setState({
                         searchList: res.result.songs
                     })
@@ -52,12 +52,19 @@ import {searchHot,searchInfo} from '../../util/axios'
          })
          this.goSearch(this.inpVal.current.value)
     }
+    keyup(e){
+        if(e.keyCode == 13 && e.target.value != ''){
+            this.goSearch(e.target.value)
+        }
+    }
     clearInfo(){
         //input为空
         this.inpVal.current.value = ''
         this.setState({
-            searchList: []
+            searchList: [],
+            valFlag:''
         })
+        this.sch.current.innerText='搜索歌手、歌曲、专辑'
     }
     render(){
         const {hotsList,searchList,valFlag} = this.state;
@@ -65,7 +72,7 @@ import {searchHot,searchInfo} from '../../util/axios'
             return (<div className='search'>
               <div className='sch'>
                   <i className='iconfont icon-Bduanzhongsousou'></i>
-                  <input type='text' id='schinp' onFocus={this.getVal.bind(this)} ref={this.inpVal} onInput={this.getInput.bind(this)}/>
+                  <input type='text' id='schinp' onFocus={this.getVal.bind(this)} ref={this.inpVal} onInput={this.getInput.bind(this)} onKeyUp={this.keyup.bind(this)}/>
                    <label ref={this.sch} htmlFor='schinp'>搜索歌手、歌曲、专辑</label> 
                    {
                         valFlag ? <button onClick={this.clearInfo.bind(this)} className='del'>×</button> : ''

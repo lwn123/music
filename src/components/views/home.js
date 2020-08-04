@@ -52,6 +52,15 @@ import {personalized,banner,getNewSongs} from '../../util/axios'
 
         }))
     }
+    //跳转到歌单详情事件
+    goDetail(id){
+        this.props.history.push({
+            pathname:'/detail',
+            state:{
+                id
+            }
+        })
+    }
     render(){
         const {songList,newSong,banner} = this.state;
             return (<div className='home'>
@@ -76,7 +85,7 @@ import {personalized,banner,getNewSongs} from '../../util/axios'
                             return (
                                 <li key={item.id}>
                                 <div className='imgWrap'>
-                                <img src={item.picUrl} />
+                                <img src={item.picUrl} onClick={this.goDetail.bind(this,item.id)} />
                                 </div>
                                 <p>{item.name}
                                 </p>

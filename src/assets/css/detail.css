@@ -1,0 +1,125 @@
+.detail_top{
+    position: relative;
+    width: 414px;
+    height: 218px;
+}
+.detail_top .detail_jieshao{
+    position: absolute;
+    top: 2.3rem;
+    left:.4rem;
+    width: 5rem;
+    line-height: .35rem;
+    font-size: .24rem;
+    color: hsla(0,0%,100%,.8);
+}
+.detail_top .update{
+    position: absolute;
+    display: inline;
+    padding: .1rem;
+    background:hsla(0,0%,100%,.2);
+    top:1.3rem;
+    left:.4rem;
+    font-size: .42rempx;
+    color: hsla(0,0%,100%,.8);
+    
+}
+.detail_top .title{
+    position: absolute;
+    top:.7rem;
+    left:.4rem;
+    font-size: .32rem;
+    color: hsla(0,0%,100%,.8);
+}
+.detail_list{
+    height: .46rem;
+    line-height: .46rem;
+    padding-left: .2rem;
+    background-color: #eeeff0;
+}
+.detail_song .songList{
+    height: 1rem;
+    display: flex;
+}
+.detail_song .songList .songLeft{
+    float: left;
+    width: 0.6rem;
+    padding-left: .2rem;
+    font-size: .35rem;
+    color:#999;
+    line-height: 1rem;
+    
+}
+.detail_song .songList .songC{
+    float: left;
+    width:6rem;
+    padding:.2rem 0;
+    
+}
+.detail_song .songList .songC .sname{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+    font-size: .34rem;
+    margin-bottom: .1rem;
+}
+.detail_song .songList .songC .sauthor{
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.detail_song .songList .bg{
+    background: url(//s3.music.126.net/mobile-new/img/index_icon_2x.png?5207a28…=) no-repeat;
+    background-size: 166px 97px;
+}
+
+.detail_song .songList .songr{
+    float: right;
+    line-height: 1rem;
+    padding:  0 .15rem;
+
+}
+.detail_song .songList .songr .zt{
+    display: inline-block;
+    width: .44rem;
+    height: .44rem;
+    background-position: -24px 0;
+}
+.detial_more-wrap{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: -1rem;
+    height: 194px;
+    background-image: -webkit-linear-gradient(top,hsla(0,0%,97.3%,.7),#f8f8f8 60%);
+    background-image: linear-gradient(180deg,hsla(0,0%,97.3%,.7),#f8f8f8 60%);
+}
+.detial_more-wrap .more-text{
+    margin-top: 137px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+.detail_comment li{
+    height: 1.5rem;
+}
+.detail_comment li img{
+    float: left;
+}
+.detail_comment li .nickname{
+    font-size: .28rem;
+    color: #666;
+    line-height: .4rem;
+    overflow: hidden;
+}
+.detail_comment li span{
+    display: inline-block;
+    font-size: .2rem;
+    color: #666;
+    line-height: .4rem;
+}
+

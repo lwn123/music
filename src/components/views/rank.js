@@ -57,12 +57,12 @@ class Rank extends React.Component {
                             <li className='songList'>
                                 <div className='songLeft'>
                                     {
-                                        i < 10 ? <span style={
-                                            i < 4? 
+                                        i < 9 ? <span style={
+                                            i < 3? 
                                             {
                                                 color:'red'
                                             }:{}
-                                        }>0{i}</span> : <span>{i}</span>
+                                        }>0{i+1}</span> : <span>{i+1}</span>
                                     }
                                 </div>
                                 <div className='songC'>
